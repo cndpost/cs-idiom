@@ -1,6 +1,0 @@
-C:\Users\yxu\Documents\Visual Studio 2013\Projects\LRU\LRU_CSharp\obj\Debug\LRU_CSharp.csprojResolveAssemblyReference.cache
-C:\Users\yxu\Documents\Visual Studio 2013\Projects\LRU\LRU_CSharp\bin\Debug\LRU_CSharp.exe.config
-C:\Users\yxu\Documents\Visual Studio 2013\Projects\LRU\LRU_CSharp\bin\Debug\LRU_CSharp.exe
-C:\Users\yxu\Documents\Visual Studio 2013\Projects\LRU\LRU_CSharp\bin\Debug\LRU_CSharp.pdb
-C:\Users\yxu\Documents\Visual Studio 2013\Projects\LRU\LRU_CSharp\obj\Debug\LRU_CSharp.exe
-C:\Users\yxu\Documents\Visual Studio 2013\Projects\LRU\LRU_CSharp\obj\Debug\LRU_CSharp.pdb
