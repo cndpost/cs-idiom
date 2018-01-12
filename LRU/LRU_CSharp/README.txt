@@ -1,3 +1,12 @@
+This is a C# version of my LRU cache implementation. It is ported from https://github.com/cndpost/cppidioms/tree/master/lrucache
+
+That CPP version is also included in the soluton file of this LRU.sln, so you can do a project by project comparison to see the
+differences of C++ and C# in terms of doing I/O, parsing string, implementing list and dicionary, etc.
+
+The original requirements is listed as follows:
+=======================================================
+
+
 Please include the following in a zip or tar:
 
 * A short README (or similar) that evaluates the runtime complexity of your algorithm, how to build the program (if needed), how to run the program, any known issues, limitations, assumptions, and any other details needed.
