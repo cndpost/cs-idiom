@@ -58,7 +58,7 @@ namespace SnakeGameCSharp
                         HeadPosition.x = headX;
                         HeadPosition.y = headY++;
 
-                        snake.Add(HeadPosition);
+                        snake.Insert(0,HeadPosition);
                         if (cell[headX,headY] == FREE)
                             snake.RemoveAt(snake.Count()-1);
                         return true;
@@ -73,7 +73,7 @@ namespace SnakeGameCSharp
                         HeadPosition.x = headX++;
                         HeadPosition.y = headY;
 
-                        snake.Add(HeadPosition);
+                        snake.Insert(0,HeadPosition);
                         if (cell[headX,headY] == FREE)
                             snake.RemoveAt(snake.Count()-1);
                         return true;
@@ -88,7 +88,7 @@ namespace SnakeGameCSharp
                         HeadPosition.x = headX;
                         HeadPosition.y = headY--;
 
-                        snake.Add(HeadPosition);
+                        snake.Insert(0,HeadPosition);
                         if (cell[headX,headY] == FREE)
                             snake.RemoveAt(snake.Count()-1);
                         return true;
@@ -103,7 +103,7 @@ namespace SnakeGameCSharp
                         HeadPosition.x = headX--;
                         HeadPosition.y = headY;
 
-                        snake.Add(HeadPosition);
+                        snake.Insert(0,HeadPosition);
                         if (cell[headX,headY+1] == FREE)
                             snake.RemoveAt(snake.Count()-1);
                         return true;
