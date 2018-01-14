@@ -11,10 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3AA44B64-7CD0-4D78-8135-EB761ECDCF21}</ProjectGuid>
+    <ProjectGuid>{04AD4E06-5462-4343-9DA9-08ED5C211D0A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>SnakeGameCPP</RootNamespace>
-    <ProjectName>SnakeGameCPP-List</ProjectName>
+    <RootNamespace>SnakeGameCPPVector</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -84,7 +83,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SnakeGameCPP.cpp" />
+    <ClCompile Include="SnakeGameCPP-Vector.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
