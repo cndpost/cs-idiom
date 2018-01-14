@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeGameCSharp", "SnakeGame\SnakeGameCSharp.csproj", "{57378A3A-D91E-4552-A7F7-346DA48512E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeGameCSharp-List", "SnakeGame\SnakeGameCSharp-List.csproj", "{57378A3A-D91E-4552-A7F7-346DA48512E6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnakeGameCPP-List", "SnakeGameCPP\SnakeGameCPP.vcxproj", "{3AA44B64-7CD0-4D78-8135-EB761ECDCF21}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnakeGameCPP-Deque", "SnakeGameCPP-Deque\SnakeGameCPP-Deque.vcxproj", "{6C016F78-C5A4-42EC-9318-C0354BDB1A14}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnakeGameCPP-Vector", "SnakeGameCPP-Vector\SnakeGameCPP-Vector.vcxproj", "{04AD4E06-5462-4343-9DA9-08ED5C211D0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeGameCS-Queue", "SnakeGameCS-Deque\SnakeGameCS-Queue.csproj", "{0FE04FCE-1AA1-4656-9BF8-08E482B141C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,16 @@ Global
 		{04AD4E06-5462-4343-9DA9-08ED5C211D0A}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{04AD4E06-5462-4343-9DA9-08ED5C211D0A}.Release|Win32.ActiveCfg = Release|Win32
 		{04AD4E06-5462-4343-9DA9-08ED5C211D0A}.Release|Win32.Build.0 = Release|Win32
+		{0FE04FCE-1AA1-4656-9BF8-08E482B141C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE04FCE-1AA1-4656-9BF8-08E482B141C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE04FCE-1AA1-4656-9BF8-08E482B141C7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0FE04FCE-1AA1-4656-9BF8-08E482B141C7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0FE04FCE-1AA1-4656-9BF8-08E482B141C7}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{0FE04FCE-1AA1-4656-9BF8-08E482B141C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE04FCE-1AA1-4656-9BF8-08E482B141C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FE04FCE-1AA1-4656-9BF8-08E482B141C7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0FE04FCE-1AA1-4656-9BF8-08E482B141C7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0FE04FCE-1AA1-4656-9BF8-08E482B141C7}.Release|Win32.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
