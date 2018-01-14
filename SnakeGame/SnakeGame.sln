@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeGameCSharp", "SnakeGam
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnakeGameCPP", "SnakeGameCPP\SnakeGameCPP.vcxproj", "{3AA44B64-7CD0-4D78-8135-EB761ECDCF21}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SnakeGameCPP-Deque", "SnakeGameCPP-Deque\SnakeGameCPP-Deque.vcxproj", "{6C016F78-C5A4-42EC-9318-C0354BDB1A14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,16 @@ Global
 		{3AA44B64-7CD0-4D78-8135-EB761ECDCF21}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{3AA44B64-7CD0-4D78-8135-EB761ECDCF21}.Release|Win32.ActiveCfg = Release|Win32
 		{3AA44B64-7CD0-4D78-8135-EB761ECDCF21}.Release|Win32.Build.0 = Release|Win32
+		{6C016F78-C5A4-42EC-9318-C0354BDB1A14}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6C016F78-C5A4-42EC-9318-C0354BDB1A14}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{6C016F78-C5A4-42EC-9318-C0354BDB1A14}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{6C016F78-C5A4-42EC-9318-C0354BDB1A14}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C016F78-C5A4-42EC-9318-C0354BDB1A14}.Debug|Win32.Build.0 = Debug|Win32
+		{6C016F78-C5A4-42EC-9318-C0354BDB1A14}.Release|Any CPU.ActiveCfg = Release|Win32
+		{6C016F78-C5A4-42EC-9318-C0354BDB1A14}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{6C016F78-C5A4-42EC-9318-C0354BDB1A14}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{6C016F78-C5A4-42EC-9318-C0354BDB1A14}.Release|Win32.ActiveCfg = Release|Win32
+		{6C016F78-C5A4-42EC-9318-C0354BDB1A14}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

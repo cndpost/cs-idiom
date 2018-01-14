@@ -16,10 +16,16 @@ using namespace std;
 
 #define  N  30
 
-struct position {
+//because the list will use pointers to struct, so we use the next typedef instead of struc def here
+//struct position {
+//	int x;
+//	int y;
+//};
+
+typedef struct position {
 	int x;
 	int y;
-};
+} pos, *ppos;
 
 class SnakeGame
 {
@@ -27,7 +33,7 @@ class SnakeGame
 private:
 	int cell[N][N];// = new int[N][N]();
 	int headX, headY;
-	list<position> snake;
+	list<ppos> snake;
 
 public:
 	SnakeGame()
@@ -48,25 +54,33 @@ public:
 			if ((headY < N) && ((cell[headX][headY] == FREE) || (cell[headX][headY] == APPLE)))
 			{
 				cell[headX][headY + 1] = BODY;
-				position *head = new position();
+				pos *head = new position();
 				head->x = headX;
 				head->y = headY++;
-				snake.push_front(*head);
-				if (cell[headX][headY] == FREE)
+				snake.push_front(head);
+				if (cell[headX][headY] == FREE) {
+					pos *tail = snake.back();
+					cell[tail->x][tail->y] = FREE; //tail out of this position
 					snake.pop_back();//.RemoveAt(snake.size() - 1);
+					delete tail;  //avoid memory leak
+				}
 				return true;
 			}
 			break;
 		case RIGHT:
-			if ((headX < N) && ((cell[headX+1][headY] == FREE) || (cell[headX+1][headY] == APPLE)))
+			if ((headX < N) && ((cell[headX + 1][headY] == FREE) || (cell[headX + 1][headY] == APPLE)))
 			{
-				cell[headX+1][headY] = BODY;
-				position *head = new position();
+				cell[headX + 1][headY] = BODY;
+				pos *head = new position();
 				head->x = headX++;
 				head->y = headY;
-				snake.push_front(*head);
-				if (cell[headX][headY] == FREE)
+				snake.push_front(head);
+				if (cell[headX][headY] == FREE) {
+					pos *tail = snake.back();
+					cell[tail->x][tail->y] = FREE; //tail out of this position
 					snake.pop_back();//.RemoveAt(snake.size() - 1);
+					delete tail;  //avoid memory leak
+				}
 				return true;
 			}
 			break;
@@ -74,12 +88,16 @@ public:
 			if ((headY > 0 ) && ((cell[headX][headY-1] == FREE) || (cell[headX][headY-1] == APPLE)))
 			{
 				cell[headX][headY - 1] = BODY;
-				position *head = new position();
+				pos *head = new position();
 				head->x = headX;
 				head->y = headY--;
-				snake.push_front(*head);
-				if (cell[headX][headY] == FREE)
+				snake.push_front(head);
+				if (cell[headX][headY] == FREE) {
+					pos *tail = snake.back();
+					cell[tail->x][tail->y] = FREE; //tail out of this position
 					snake.pop_back();//.RemoveAt(snake.size() - 1);
+					delete tail;  //avoid memory leak
+				}
 				return true;
 			}
 			break;
@@ -87,12 +105,16 @@ public:
 			if ((headX > 0) && ((cell[headX-1][headY] == FREE) || (cell[headX-1][headY] == APPLE)))
 			{
 				cell[headX-1][headY] = BODY;
-				position *head = new position();
+				pos *head = new position();
 				head->x = headX--;
 				head->y = headY;
-				snake.push_front(*head);
-				if (cell[headX][headY] == FREE)
-					snake.pop_back();//.RemoveAt(snake.size() - 1);
+				snake.push_front(head);
+				if (cell[headX][headY] == FREE) {
+					pos *tail = snake.back();
+					cell[tail->x][tail->y] = FREE; //tail out of this position
+					snake.pop_back();//.RemoveAt(snake.size() - 1);	
+					delete tail;  //avoid memory leak
+				}
 				return true;
 			}
 			break;
